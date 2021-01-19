@@ -1,26 +1,41 @@
 import './App.css';
+import Navigator from './components/Navigator';
+import MainViewport from './components/MainViewport';
 import {createUseStyles} from 'react-jss';
-import logo from './assets/logo.png'
 import bg from './assets/bg.png';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams 
+} from "react-router-dom";
 
-const useStyles = createUseStyles({
+
+const appStyles = createUseStyles({
   App: {
     textAlign: 'center',
     display: 'flex',
+    fontFamily: '"Anomymous Pro" , monospace',
     backgroundImage: `url(${bg})`,
     height: '100%',
     backgroundAttachment: 'fixed'
-}})
-
+  },
+})
 
 
 function App() {
-  const classes = useStyles()
+  const classes = appStyles()
   return (
-    <div className={classes.App}>
-      <img src={logo} className="App-logo" alt="logo" />
-      <p>hello</p>
-    </div>
+    <Router>
+      <div className={classes.App}>
+        <Navigator/>
+        <MainViewport>
+            <p>hello</p>
+        </MainViewport>
+      </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,5 @@
 {
-  "homepage": "https://alessio-b-zak.github.io/mmt",
+  "homepage": ".",
   "name": "mmt",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +10,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-jss": "^10.5.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
   },
