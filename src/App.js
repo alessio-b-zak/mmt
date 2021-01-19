@@ -32,7 +32,14 @@ function App() {
       <div className={classes.App}>
         <Navigator/>
         <MainViewport>
-            <p>hello</p>
+            <Switch>
+              <Route exact path="/">
+                hello
+              </Route>
+              <Route path="/qanon">
+                goodbye
+              </Route>
+            </Switch>
         </MainViewport>
       </div>
     </Router>

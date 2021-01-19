@@ -1,5 +1,6 @@
-import React from 'react'
-import Sidebar from './Sidebar'
+import React from 'react';
+import Sidebar from './Sidebar';
+import { Link } from 'react-router-dom';
 
 const useViewport = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -18,7 +19,7 @@ const useViewport = () => {
 const Navigator = () => {
   const { width } = useViewport();
   const breakpoint = 600;
-  return width < breakpoint ? <div>hello</div>  : <Sidebar>hello</Sidebar> ;
+  return width < breakpoint ? <div>hello</div>  : <Sidebar><Link to={`/qanon`}>qanon</Link></Sidebar> ;
 
 }
 
