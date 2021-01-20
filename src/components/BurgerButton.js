@@ -1,4 +1,5 @@
 import React from 'react'
+import disableScroll from 'disable-scroll';
 import {createUseStyles} from 'react-jss';
 
 
@@ -32,10 +33,10 @@ const burgerButtonStyles = createUseStyles({
     }
 })
 
-const BurgerButton = () => {
+const BurgerButton = ({open, setOpen}) => {
     const classes = burgerButtonStyles();
     return (
-        <div className={classes.burgerButton}>
+        <div onClick={() => {if (open === true){ setOpen(!open); disableScroll.off();}else{disableScroll.on(); setOpen(!open)}}} className={classes.burgerButton}>
            <div/> 
            <div/> 
            <div/> 
