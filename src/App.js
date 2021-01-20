@@ -1,8 +1,13 @@
 import './App.css';
 import Navigator from './components/Navigator';
+import TitleViewer from './routes/TitleViewer';
+import TreeView from './components/TreeView';
 import MainViewport from './components/MainViewport';
 import {createUseStyles} from 'react-jss';
+
 import bg from './assets/bg.png';
+
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,7 +25,10 @@ const appStyles = createUseStyles({
     fontFamily: '"Anomymous Pro" , monospace',
     backgroundImage: `url(${bg})`,
     height: '100%',
-    backgroundAttachment: 'fixed'
+    backgroundAttachment: 'fixed',
+    '& h1': {
+     fontFamily: '"Press Start 2P" , cursive',
+    }
   },
 })
 
@@ -30,11 +38,14 @@ function App() {
   return (
     <Router>
       <div className={classes.App}>
-        <Navigator/>
+        <Navigator>
+          <h1>files</h1>
+          <TreeView/>
+        </Navigator>
         <MainViewport>
             <Switch>
               <Route exact path="/">
-                hello
+                <TitleViewer/>
               </Route>
               <Route path="/qanon">
                 goodbye

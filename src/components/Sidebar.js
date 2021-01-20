@@ -14,23 +14,23 @@ const sidebarStyles = createUseStyles({
     contentContainer: {
         top: '0',
         position: 'sticky',
-        height: '100vh',
+        marginTop: '5vh'
     },
     logo: {
-        height: '25vh',
-        width: '25vh',
+        height: '20vh',
+        width: '20vh',
         margin: '1%',
         position: 'sticky',
         marginRight: '0.5vw'
     },
     floatingSidebar: {
         width: '60%',
-        minWidth: '220px',
+        minWidth: '180px',
         paddingTop: '2%',
-        height: '60vh',
+        height: '30vh',
         marginRight: '0.5vw',
         background: 'rgb(243, 245, 252)',
-        textAlign: 'left',
+        textAlign: 'center',
         borderRadius: '3px'
     }
 })
@@ -40,7 +40,7 @@ const Sidebar = props => {
    return (
         <div className={classes.leftColumn}>
             <div className={classes.contentContainer}>
-                <img className={classes.logo} src={logo}/>
+                <a href="/"><img className={classes.logo} src={logo}/></a>
                 <div className={classes.floatingSidebar}>
                     {props.children}
                 </div>

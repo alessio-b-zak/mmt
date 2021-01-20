@@ -16,10 +16,10 @@ const useViewport = () => {
 }
 
 
-const Navigator = () => {
+const Navigator = props => {
   const { width } = useViewport();
   const breakpoint = 600;
-  return width < breakpoint ? <div>hello</div>  : <Sidebar><Link to={`/qanon`}>qanon</Link></Sidebar> ;
+  return width < breakpoint ? <div>hello</div>  : <Sidebar>{props.children}</Sidebar> ;
 
 }
 

@@ -5,7 +5,7 @@ const contentViewerStyles = createUseStyles({
         minHeight: '90vh',
         position: 'relative',
         width: "70%",
-        minWidth: '810px',
+        minWidth: '580px',
         margin : {
             top: '5vh',
             left: '0.5vh',

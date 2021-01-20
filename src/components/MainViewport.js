@@ -9,7 +9,8 @@ const mainViewportStyles = createUseStyles({
     flexShrink: '1',
     flexBasis: '75%',
     display: 'flex',
-    justifyContent: 'flex-start'
+    justifyContent: 'flex-start',
+    flexDirection: 'column'
   }
 
 })
