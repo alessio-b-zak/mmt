@@ -28,10 +28,15 @@ const appStyles = createUseStyles({
     backgroundAttachment: 'fixed',
     '& h1': {
      fontFamily: '"Press Start 2P" , cursive',
+     color: 'black'
     }
   },
+  '@media only screen and (max-width: 600px)' :{
+    App : {
+      flexDirection: 'column',
+    }
+  }
 })
-
 
 function App() {
   const classes = appStyles()
@@ -39,7 +44,7 @@ function App() {
     <Router>
       <div className={classes.App}>
         <Navigator>
-          <h1>files</h1>
+          <h1 className="font-effect-3d">files</h1>
           <TreeView/>
         </Navigator>
         <MainViewport>
@@ -47,8 +52,14 @@ function App() {
               <Route exact path="/">
                 <TitleViewer/>
               </Route>
-              <Route path="/qanon">
+              <Route path="/projects">
+                hello
+              </Route>
+              <Route path="/contributions">
                 goodbye
+              </Route>
+              <Route path="/aboutus">
+                yoooooo
               </Route>
             </Switch>
         </MainViewport>

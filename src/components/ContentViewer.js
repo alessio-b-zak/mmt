@@ -21,7 +21,14 @@ const contentViewerStyles = createUseStyles({
         background: 'rgb(243, 245, 252)',
         textAlign: 'left',
         borderRadius: '3px',
+    },
+  '@media only screen and (max-width: 600px)' :{
+    contentViewer :{
+        minWidth: '0px',
+        width: '98%',
+        marginTop: '0.5%',
     }
+  }
 })
 
 

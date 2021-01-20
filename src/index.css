@@ -18,6 +18,13 @@ html {
   min-height: 100vh;
 }
 
+@media only screen and (max-width: 600px) {
+  html {
+      height: calc(100% + 60px);
+      min-height: calc(100% + 60px);
+    }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

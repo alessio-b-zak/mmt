@@ -11,8 +11,13 @@ const mainViewportStyles = createUseStyles({
     display: 'flex',
     justifyContent: 'flex-start',
     flexDirection: 'column'
+  },
+  '@media only screen and (max-width: 600px)' :{
+    mainViewport :{
+      justifyContent: 'center',
+      flexBasis: '90%'
+    }
   }
-
 })
 
 const MainViewport = props => {

@@ -13,7 +13,7 @@ const links = [
     },
     {
         linkText : "about us",
-        url :  "/about"
+        url :  "/aboutus"
     },
 ]
 

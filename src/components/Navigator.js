@@ -1,6 +1,7 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import { Link } from 'react-router-dom';
+import BurgerMenu from './BurgerMenu';
 
 const useViewport = () => {
   const [width, setWidth] = React.useState(window.innerWidth);
@@ -19,7 +20,7 @@ const useViewport = () => {
 const Navigator = props => {
   const { width } = useViewport();
   const breakpoint = 600;
-  return width < breakpoint ? <div>hello</div>  : <Sidebar>{props.children}</Sidebar> ;
+  return width < breakpoint ? <BurgerMenu/>  : <Sidebar>{props.children}</Sidebar> ;
 
 }
 
