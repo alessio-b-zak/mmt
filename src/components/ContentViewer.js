@@ -29,7 +29,7 @@ const contentViewerStyles = createUseStyles({
         margin :{
             left: '2%',
             right: '2%',
-            top: '0px',
+            top: '1%',
             bottom: '0px'
         }
     }

@@ -16,6 +16,7 @@ const burgerMenuStyles = createUseStyles({
         display: 'flex',
         alignItems: 'center',
         order: '2',
+        height: '80%',
         width: '40%',
         padding: '2%',
         '& h1' : {
@@ -34,13 +35,13 @@ const burgerMenuStyles = createUseStyles({
         order: 3,
         width: '35%',
         display: 'flex',
+        flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
     },
     menu : open => ({
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'center',
         backgroundColor: 'rgb(243, 245, 252)',
         height: '100vh',
         textAlign: 'left',
@@ -57,6 +58,9 @@ const burgerMenuStyles = createUseStyles({
         maxWidth: '100%',
         maxHeight: '100%',
         padding: '5%'
+    },   
+    navbarPlaceholder: {
+        height: '10%',
     }
 })
 
@@ -65,7 +69,9 @@ const Menu = ({open, setOpen}) => {
     const classes = burgerMenuStyles(open);
     return(
         <div className={classes.menu}>
-            <TreeView/>
+          <div className={classes.navbarPlaceholder}>
+          </div>
+            <TreeView />
         </div>
     )
 }
@@ -84,6 +90,7 @@ const BurgerMenu = () => {
           <div className={classes.logoContainer}> 
             <img className={classes.logoStyle} src={logo}/>
           </div>
+          <div/>
           <Menu open={open} setOpen={setOpen} />
         </div>
     )
