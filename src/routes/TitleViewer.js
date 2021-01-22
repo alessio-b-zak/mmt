@@ -9,6 +9,11 @@ const titleViewerStyles = createUseStyles({
         fontSize: '6vw',
         marginBottom: '10%',
     },
+  '@media only screen and (max-width: 600px)' :{
+      test : {
+          fontSize: '12vw'
+      }
+  }
 })
 
 const TitleViewer = () => {
@@ -29,7 +34,5 @@ const TitleViewer = () => {
         </div>
     )
 }
-
-
 
 export default TitleViewer

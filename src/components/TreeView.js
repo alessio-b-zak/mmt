@@ -4,6 +4,10 @@ import {Link} from 'react-router-dom';
 
 const links = [
     {
+        linkText: "home",
+        url: "/"
+    },
+    {
         linkText : "projects",
         url : "/projects"
     },

@@ -5,9 +5,6 @@ import {createUseStyles} from 'react-jss';
 
 const burgerButtonStyles = createUseStyles({
     burgerButton : {
-        position: 'absolute',
-        top: '3%',
-        left: '2rem',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-around',

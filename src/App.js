@@ -1,6 +1,9 @@
 import './App.css';
 import Navigator from './components/Navigator';
 import TitleViewer from './routes/TitleViewer';
+import About from './routes/About';
+import Projects from './routes/Projects';
+import Contributions from './routes/Contributions';
 import TreeView from './components/TreeView';
 import MainViewport from './components/MainViewport';
 import {createUseStyles} from 'react-jss';
@@ -53,13 +56,13 @@ function App() {
                 <TitleViewer/>
               </Route>
               <Route path="/projects">
-                hello
+                <Projects/>
               </Route>
               <Route path="/contributions">
-                goodbye
+                <Contributions/>
               </Route>
               <Route path="/aboutus">
-                yoooooo
+                <About/>
               </Route>
             </Switch>
         </MainViewport>
