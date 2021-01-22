@@ -5,10 +5,15 @@ import download from "../assets/download.jpeg"
 const projectEntryStyles = createUseStyles({
     projectEntry : {
         display: 'flex',
-        flexDirection: 'row',
+        flexDirection: 'column',
         border: 'solid black 1px',
         padding: '10px',
         backgroundColor: 'lightgray',
+        marginTop: '2%'
+    },
+    projectContainer : {
+        display: 'flex',
+        flexDirection: 'row',
         height: '100px',
         marginTop: '2%'
     },
@@ -55,6 +60,8 @@ const ProjectEntry = () => {
     const classes = projectEntryStyles()
     return (
         <div className={classes.projectEntry}>
+            <div>The chillout zone</div>
+            <div className={classes.projectContainer}>
             <div className={classes.pictureContainer}>
                 <img className={classes.teaserImage} src={download}/>
             </div>
@@ -64,6 +71,7 @@ const ProjectEntry = () => {
             </div>
             <div className={classes.tagContainer}>
                 chilling
+            </div>
             </div>
         </div>
     )

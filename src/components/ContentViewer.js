@@ -30,7 +30,7 @@ const contentViewerStyles = createUseStyles({
             left: '2%',
             right: '2%',
             top: '1%',
-            bottom: '0px'
+            bottom: '1%'
         }
     }
   }
