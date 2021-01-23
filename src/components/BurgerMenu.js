@@ -16,7 +16,6 @@ const burgerMenuStyles = createUseStyles({
         display: 'flex',
         alignItems: 'center',
         order: '2',
-        height: '80%',
         width: '40%',
         padding: '2%',
         '& h1' : {

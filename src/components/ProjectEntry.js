@@ -1,5 +1,6 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
+import { Link } from 'react-router-dom';
 import download from "../assets/download.jpeg"
 
 
@@ -12,7 +13,6 @@ const projectEntryStyles = createUseStyles({
         flexDirection: 'column',
         border: 'solid black 1px',
         padding: '10px',
-        backgroundColor: 'lightgray',
         marginTop: '2%'
     },
     projectContainer : {
@@ -25,7 +25,6 @@ const projectEntryStyles = createUseStyles({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
-        border: 'solid black 1px',
         height: '80px',
         order: '1',
         left: '10px',
@@ -40,9 +39,13 @@ const projectEntryStyles = createUseStyles({
         order: '2',
         width: '60%',
         margin :{
-        left: '10px',
-        right: '10px',
-        }
+            left: '10px',
+            right: '10px',
+        },
+    },
+    forceNoStyle : {
+        textDecoration: 'none', 
+        color: 'black',
     },
     tagContainer : {
         border: 'solid black 1px',
@@ -57,6 +60,14 @@ const projectEntryStyles = createUseStyles({
     teaserImage : {
        maxWidth: '100%',
        maxHeight: '100%',
+    },
+    linksStyles : {
+        '& a' : {
+        textDecoration: 'none'
+        },
+        '&:hover':{
+        backgroundColor: 'lightyellow'
+        }
     }
 })
 
@@ -75,10 +86,10 @@ const useViewport = () => {
 
 
 const chill = {
-    title: 'The Chillout Zone',
+    title: 'initialThe Chillout Zone',
     imgPath: 'assets/imgPath',
     description: 'A theatre play about chilling the fuck out',
-    tags: ['chilling', 'billing']
+    tags: ['chilling']
 }
 
 
@@ -86,19 +97,29 @@ const ProjectEntryBig = props => {
     const classes = projectEntryStyles()
     const tI = require('../assets/download.jpeg');
     return (
+        <div className={classes.linksStyles}>
+        <Link  to={props.url}>
         <div className={classes.projectEntry}>
-            <div>{props.title}</div>
+            <div>
+                <p className={classes.forceNoStyle}>
+                    {props.title}
+                </p>
+            </div>
             <div className={classes.projectContainer}>
             <div className={classes.pictureContainer}>
                 <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
             <div className={classes.textContainer}>
-                {props.description}
+                <p className={classes.forceNoStyle}>{props.description}</p>
             </div>
             <div className={classes.tagContainer}>
-                {props.tags}
+                <p className={classes.forceNoStyle}>
+                    {props.tags}
+                </p>
             </div>
             </div>
+        </div>
+        </Link>
         </div>
     )
 }
@@ -113,8 +134,14 @@ const projectEntrySmallStyles = createUseStyles({
         marginBottom: '4%'
     },
     boxContainer : {
-         display: 'flex',
+        display: 'flex',
         border: 'solid black 1px',
+        padding: '10px',
+        flexDirection: 'column',
+        marginTop: '5px',
+    },
+    picContainer: {
+        display: 'flex',
         padding: '10px',
         flexDirection: 'column'
     }
@@ -124,7 +151,7 @@ const ProjectEntrySmall = props => {
     const classes = projectEntrySmallStyles()
     return(
         <div className={classes.projectSmallContainer}>
-            <div className={classes.boxContainer}>
+            <div className={classes.picContainer}>
                 <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
             <div>
@@ -132,8 +159,8 @@ const ProjectEntrySmall = props => {
             </div>
             <div className={classes.boxContainer}>
                 {props.description}
-            </div>
-            <div>
+                <br/>
+                <br/>
                 {props.tags}
             </div>
         </div>

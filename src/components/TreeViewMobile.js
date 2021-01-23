@@ -1,6 +1,7 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss';
 import {Link} from 'react-router-dom';
+import disableScroll from 'disable-scroll';
 
 const treeViewMobileStyles = createUseStyles({
     treeViewMobile : {
@@ -45,7 +46,7 @@ function link_to_list_close({open, setOpen}) {
     const classes = linkStyles();
     const link_to_list = link => {
         return(
-            <li className={classes.liI}><Link onClick={() => setOpen(!open)} to={link.url}><div className={classes.linkStyle}>{link.linkText}</div></Link></li>
+            <li className={classes.liI}><Link onClick={() => {setOpen(!open); disableScroll.off();}} to={link.url}><div className={classes.linkStyle}>{link.linkText}</div></Link></li>
         )
     }
     return(link_to_list)
