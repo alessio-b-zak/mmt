@@ -100,11 +100,9 @@ const ProjectEntryBig = props => {
         <div className={classes.linksStyles}>
         <Link  to={props.url}>
         <div className={classes.projectEntry}>
-            <div>
-                <p className={classes.forceNoStyle}>
-                    {props.title}
-                </p>
-            </div>
+            <p className={classes.forceNoStyle}>
+                {props.title}
+            </p>
             <div className={classes.projectContainer}>
             <div className={classes.pictureContainer}>
                 <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
@@ -131,7 +129,8 @@ const projectEntrySmallStyles = createUseStyles({
         border: 'solid black 1px',
         padding: '10px',
         flexDirection: 'column',
-        marginBottom: '4%'
+        marginBottom: '4%',
+        backgroundColor: 'lightyellow',
     },
     boxContainer : {
         display: 'flex',
@@ -139,22 +138,39 @@ const projectEntrySmallStyles = createUseStyles({
         padding: '10px',
         flexDirection: 'column',
         marginTop: '5px',
+        textDecoration: 'none', 
+        color: 'black',
+
     },
     picContainer: {
         display: 'flex',
         padding: '10px',
         flexDirection: 'column'
-    }
+    },
+    linksStyles : {
+        '& a' : {
+        textDecoration: 'none'
+        },
+        '&:hover':{
+        backgroundColor: 'lightyellow'
+        }
+    },
+    forceNoStyle : {
+        textDecoration: 'none', 
+        color: 'black',
+    },
 })
 
 const ProjectEntrySmall = props => {
     const classes = projectEntrySmallStyles()
     return(
+        <div className={classes.linksStyles}>
+        <Link  to={props.url}>
         <div className={classes.projectSmallContainer}>
             <div className={classes.picContainer}>
                 <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
-            <div>
+            <div className={classes.forceNoStyle}>
                 {props.title}
             </div>
             <div className={classes.boxContainer}>
@@ -163,6 +179,8 @@ const ProjectEntrySmall = props => {
                 <br/>
                 {props.tags}
             </div>
+        </div>
+        </Link>
         </div>
     )
 }
