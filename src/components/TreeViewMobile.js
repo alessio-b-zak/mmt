@@ -21,23 +21,27 @@ const links = [
     },
 ]
 
-const link_to_list = link => {
-    return(
-        <li><Link to={link.url}>{link.linkText}</Link></li>
-    )
+function link_to_list_close({open, setOpen}) {
+    const link_to_list = link => {
+        return(
+            <li><Link onClick={() => setOpen(!open)} to={link.url}>{link.linkText}</Link></li>
+        )
+    }
+    return(link_to_list)
 }
 
-const treeViewStyles = createUseStyles({
-    treeView: {
+const treeViewMobileStyles = createUseStyles({
+    treeViewMobile : {
         textAlign: 'left'
     }
 })
 
 
-const TreeView = props => {
-    const classes = treeViewStyles();
+const TreeViewMobile = ({open, setOpen}) => {
+    const classes = treeViewMobileStyles();
+    const link_to_list = link_to_list_close({open, setOpen})
     return (
-        <div className={classes.treeView}>
+        <div className={classes.treeViewMobile}>
             <ul>
                 {links.map(link_to_list)}  
             </ul>
@@ -47,4 +51,4 @@ const TreeView = props => {
 
 
 
-export default TreeView
+export default TreeViewMobile;

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { createUseStyles } from 'react-jss';
 import BurgerButton from './BurgerButton';
 import logo from '../assets/logo.png'
-import TreeView from './TreeView';
+import TreeViewMobile from './TreeViewMobile';
 
 const burgerMenuStyles = createUseStyles({
     hiddenSidebar : {
@@ -52,7 +52,7 @@ const burgerMenuStyles = createUseStyles({
         width: '100%',
         zIndex: '4',
         transform: open ? 'translateX(0%)' : 'translateX(-100%)',
-        transition: 'transform 0.3s ease-in-out'
+        transition: 'transform 0.3s ease-in-out',
     }) ,
     logoStyle : {
         maxWidth: '100%',
@@ -71,7 +71,7 @@ const Menu = ({open, setOpen}) => {
         <div className={classes.menu}>
           <div className={classes.navbarPlaceholder}>
           </div>
-            <TreeView />
+            <TreeViewMobile open={open} setOpen={setOpen}/>
         </div>
     )
 }
