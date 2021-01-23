@@ -28,14 +28,13 @@ const contactStyles = createUseStyles({
     }
 })
 
-
-const Contact = () => {
+const Contact = props => {
     const classes = contactStyles()
     return (
         <div className={classes.contactContainer}>
-            <img className={classes.personImage} src={download}/>
-            <div className={classes.box}>brian</div>
-            <div className={classes.box}>the chillest guy</div>
+            <img className={classes.personImage} src={require("../assets/" + props.imgPath).default}/>
+            <div className={classes.box}>{props.name}</div>
+            <div className={classes.box}>{props.description}</div>
         </div>
     )
 }

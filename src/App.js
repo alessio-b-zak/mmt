@@ -41,6 +41,26 @@ const appStyles = createUseStyles({
   }
 })
 
+
+const links = [
+    {
+        linkText: "home",
+        url: "/"
+    },
+    {
+        linkText : "projects",
+        url : "/projects"
+    },
+    {
+        linkText: "contributions",
+        url: "/contributions"
+    },
+    {
+        linkText : "about us",
+        url :  "/aboutus"
+    },
+]
+
 function App() {
   const classes = appStyles()
   return (
@@ -48,7 +68,7 @@ function App() {
       <div className={classes.App}>
         <Navigator>
           <h1 className="font-effect-3d">files</h1>
-          <TreeView/>
+          <TreeView links={links} />
         </Navigator>
         <MainViewport>
             <Switch>

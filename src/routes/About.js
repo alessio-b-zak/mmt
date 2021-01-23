@@ -14,6 +14,19 @@ const aboutStyles = createUseStyles({
 })
 
 
+const brian = {
+    name: 'Brian',
+    description: 'A chill dude',
+    imgPath: 'bg.png'
+}
+
+const gosh = {
+    name: 'gosh',
+    description: 'A chill dude',
+    imgPath: 'logo.png'
+}
+
+
 const About = () => {
     const classes = aboutStyles();
     return (
@@ -21,10 +34,10 @@ const About = () => {
            <h1 className="font-effect-3d">Who are we?</h1> 
            {/* grid here with our pictures and links */}
            <div className={classes.peopleGrid}>
-                <Contact/> 
-                <Contact/> 
-                <Contact/> 
-                <Contact/> 
+                <Contact {...brian}/> 
+                <Contact {...gosh}/> 
+                <Contact {...brian}/> 
+                <Contact {...brian}/> 
            </div>
         </div>
     )

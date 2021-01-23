@@ -2,24 +2,7 @@ import React from 'react'
 import {createUseStyles} from 'react-jss';
 import {Link} from 'react-router-dom';
 
-const links = [
-    {
-        linkText: "home",
-        url: "/"
-    },
-    {
-        linkText : "projects",
-        url : "/projects"
-    },
-    {
-        linkText: "contributions",
-        url: "/contributions"
-    },
-    {
-        linkText : "about us",
-        url :  "/aboutus"
-    },
-]
+
 
 const link_to_list = link => {
     return(
@@ -39,7 +22,7 @@ const TreeView = props => {
     return (
         <div className={classes.treeView}>
             <ul>
-                {links.map(link_to_list)}  
+                {props.links.map(link_to_list)}  
             </ul>
         </div>
     )

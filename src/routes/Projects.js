@@ -5,12 +5,7 @@ const Projects = () => {
     return (
         <div>
            <h1 className="font-effect-3d">Our work</h1> 
-           <ProjectEntry/>
-           <ProjectEntry/>
-           <ProjectEntry/>
-           <ProjectEntry/>
-           <ProjectEntry/>
-           <ProjectEntry/>
+           Coming soon!
         </div>
     )
 }

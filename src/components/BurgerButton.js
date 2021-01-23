@@ -13,7 +13,7 @@ const burgerButtonStyles = createUseStyles({
         background: 'transparent',
         border: 'none',
         cursor: 'pointer',
-        padding: '0',
+        margin: '10px',
         zIndex: '10',
         '&:focus' : {
             outline: 'none'
@@ -27,16 +27,26 @@ const burgerButtonStyles = createUseStyles({
             position: 'relative',
             transformOrigin: '1px'
         }
-    }
+    },
+    firstLine : open => ({
+        transform: open ? 'rotate(45deg)' : 'rotate(0)'
+    }),
+    secondLine : open => ({
+        transform: open ? 'translateX(20px)' : 'translateX(0)' ,
+        opacity: open ? '0' : '1',
+    }),
+    thirdLine : open => ({
+        transform: open ? 'rotate(-45deg)' : 'rotate(0)'
+    })
 })
 
 const BurgerButton = ({open, setOpen}) => {
-    const classes = burgerButtonStyles();
+    const classes = burgerButtonStyles(open);
     return (
         <div onClick={() => {if (open === true){ setOpen(!open); disableScroll.off();}else{disableScroll.on(); setOpen(!open)}}} className={classes.burgerButton}>
-           <div/> 
-           <div/> 
-           <div/> 
+           <div className={classes.firstLine}/> 
+           <div className={classes.secondLine}/> 
+           <div className={classes.thirdLine}/> 
         </div>
     )
 }

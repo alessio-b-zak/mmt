@@ -9,6 +9,14 @@ const contributionsStyles = createUseStyles({
     }
 })
 
+const chill = {
+    title: 'The Chillout Zone',
+    imgPath: 'download.jpeg',
+    description: 'A theatre play about chilling the fuck out',
+    tags: ['chilling', 'billing']
+}
+
+
 //  make the title smaller you fucking moron
 
 
@@ -18,11 +26,7 @@ const Contributions = () => {
     return (
         <div>
             <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
-            <ProjectEntry/>
-            <ProjectEntry/>
-            <ProjectEntry/>
-            <ProjectEntry/>
-            <ProjectEntry/>
+            <ProjectEntry {...chill}/>
         </div>
     )
 }

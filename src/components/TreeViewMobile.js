@@ -2,6 +2,26 @@ import React from 'react'
 import {createUseStyles} from 'react-jss';
 import {Link} from 'react-router-dom';
 
+const treeViewMobileStyles = createUseStyles({
+    treeViewMobile : {
+        textAlign: 'left',
+        '& ul' :{
+            paddingLeft: '0px'
+        }
+    },
+})
+
+const linkStyles = createUseStyles({
+    linkStyle : {
+        padding: '10px',
+        fontSize: '5vw'
+    },
+    liI :{
+        border: 'solid 2px grey',
+        margin:  '2vh',
+    }
+})
+
 const links = [
     {
         linkText: "home",
@@ -22,19 +42,14 @@ const links = [
 ]
 
 function link_to_list_close({open, setOpen}) {
+    const classes = linkStyles();
     const link_to_list = link => {
         return(
-            <li><Link onClick={() => setOpen(!open)} to={link.url}>{link.linkText}</Link></li>
+            <li className={classes.liI}><Link onClick={() => setOpen(!open)} to={link.url}><div className={classes.linkStyle}>{link.linkText}</div></Link></li>
         )
     }
     return(link_to_list)
 }
-
-const treeViewMobileStyles = createUseStyles({
-    treeViewMobile : {
-        textAlign: 'left'
-    }
-})
 
 
 const TreeViewMobile = ({open, setOpen}) => {

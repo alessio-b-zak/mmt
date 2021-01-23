@@ -2,6 +2,10 @@ import React from 'react'
 import {createUseStyles} from 'react-jss'
 import download from "../assets/download.jpeg"
 
+
+const images = require.context('../assets', true);
+
+
 const projectEntryStyles = createUseStyles({
     projectEntry : {
         display: 'flex',
@@ -70,22 +74,29 @@ const useViewport = () => {
 }
 
 
+const chill = {
+    title: 'The Chillout Zone',
+    imgPath: 'assets/imgPath',
+    description: 'A theatre play about chilling the fuck out',
+    tags: ['chilling', 'billing']
+}
 
-const ProjectEntryBig = () => {
+
+const ProjectEntryBig = props => {
     const classes = projectEntryStyles()
+    const tI = require('../assets/download.jpeg');
     return (
         <div className={classes.projectEntry}>
-            <div>The chillout zone</div>
+            <div>{props.title}</div>
             <div className={classes.projectContainer}>
             <div className={classes.pictureContainer}>
-                <img className={classes.teaserImage} src={download}/>
+                <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
             <div className={classes.textContainer}>
-                A theatre play about chilling the fuck out,
-                nice
+                {props.description}
             </div>
             <div className={classes.tagContainer}>
-                chilling
+                {props.tags}
             </div>
             </div>
         </div>
@@ -109,22 +120,21 @@ const projectEntrySmallStyles = createUseStyles({
     }
 })
 
-const ProjectEntrySmall = () => {
+const ProjectEntrySmall = props => {
     const classes = projectEntrySmallStyles()
     return(
         <div className={classes.projectSmallContainer}>
             <div className={classes.boxContainer}>
-                <img src={download}/>
+                <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
             <div>
-                The chillout zone
+                {props.title}
             </div>
             <div className={classes.boxContainer}>
-                A theatre play about chilling the fuck out,
-                nice
+                {props.description}
             </div>
             <div>
-                chillout
+                {props.tags}
             </div>
         </div>
     )
@@ -133,7 +143,7 @@ const ProjectEntrySmall = () => {
 const ProjectEntry = props => {
   const { width } = useViewport();
   const breakpoint = 600;
-  return width < breakpoint ? <ProjectEntrySmall/>  : <ProjectEntryBig/> ;
+  return width < breakpoint ? <ProjectEntrySmall {...props} />  : <ProjectEntryBig {...props}/> ;
 
 }
 
