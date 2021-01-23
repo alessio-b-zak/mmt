@@ -5,7 +5,9 @@ const contentViewerStyles = createUseStyles({
         minHeight: '90vh',
         position: 'relative',
         width: "70%",
-        minWidth: '430px',
+        minWidth: '900px',
+        flexBasis: '75%',
+        flexSrink: '1',
         margin : {
             top: '5vh',
             left: '0.5vh',
@@ -22,15 +24,23 @@ const contentViewerStyles = createUseStyles({
         textAlign: 'left',
         borderRadius: '3px',
     },
+  '@media only screen and (max-width: 1230px)' :{
+      contentViewer :{
+          minWidth: '500px',
+          width: '97%',
+          marginRight: '10px'
+      }
+  },
   '@media only screen and (max-width: 600px)' :{
     contentViewer :{
         minWidth: '0px',
+        minHeight: '70vh',
         width: '96%',
         margin :{
             left: '2%',
             right: '2%',
             top: '1%',
-            bottom: '1%'
+            bottom: '4%'
         }
     }
   }

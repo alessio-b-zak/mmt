@@ -1,4 +1,3 @@
-import './App.css';
 import Navigator from './components/Navigator';
 import TitleViewer from './routes/TitleViewer';
 import About from './routes/About';
@@ -25,7 +24,7 @@ const appStyles = createUseStyles({
   App: {
     textAlign: 'center',
     display: 'flex',
-    fontFamily: '"Anomymous Pro" , monospace',
+    fontFamily: "'Anonymous Pro' , monospace",
     backgroundImage: `url(${bg})`,
     height: '100%',
     backgroundAttachment: 'fixed',
@@ -37,6 +36,7 @@ const appStyles = createUseStyles({
   '@media only screen and (max-width: 600px)' :{
     App : {
       flexDirection: 'column',
+      height: '100%',
     }
   }
 })

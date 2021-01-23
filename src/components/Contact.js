@@ -9,6 +9,8 @@ const contactStyles = createUseStyles({
         flexDirection: 'column',
         border: 'solid black 1px',
         padding: '10px',
+        margin: '2%',
+        width: '200px'
 
     },
     personImage :{
@@ -21,7 +23,7 @@ const contactStyles = createUseStyles({
     box: {
         margin: '2px',
         border: 'solid black 1px',
-        padding: '5px',
+        padding: '10px',
 
     }
 })

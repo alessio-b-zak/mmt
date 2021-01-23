@@ -15,6 +15,7 @@ const mainViewportStyles = createUseStyles({
   '@media only screen and (max-width: 600px)' :{
     mainViewport :{
       display: 'flex',
+      minHeight: '100vh',
       flexDirection: 'column',
     }
   }

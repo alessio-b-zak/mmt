@@ -9,6 +9,18 @@ const titleViewerStyles = createUseStyles({
         fontSize: '6vw',
         marginBottom: '10%',
     },
+
+  '@media only screen and (max-width: 1730px)' :{
+      test :{
+        fontSize: '110px'
+      }
+  },
+
+  '@media only screen and (max-width: 1230px)' :{
+      test : {
+        fontSize: '9vw',
+      }
+  },
   '@media only screen and (max-width: 600px)' :{
       test : {
           fontSize: '12vw'

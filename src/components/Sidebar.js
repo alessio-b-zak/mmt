@@ -4,34 +4,34 @@ import logo from "../assets/logo.png"
 const sidebarStyles = createUseStyles({
     leftColumn: {
         order: '1',
-        flexBasis: '25%',
-        display: 'flex',
+        width: '25%',
         marginLeft: '10px',
-        justifyContent: 'flex-end',
-        flexShrink: '1',
-        flexGrow: '1',
     },
     contentContainer: {
-        top: '0',
+        top: '5vh',
         position: 'sticky',
-        marginTop: '5vh'
+        marginTop: '5vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-end',
     },
     logo: {
-        height: '20vh',
-        width: '20vh',
-        margin: '1%',
-        position: 'sticky',
-        marginRight: '0.5vw'
+        height: 'auto',
+        width: '80%',
+        marginLeft: 'auto',
+        marginRight: '2'
     },
     floatingSidebar: {
         width: '60%',
         minWidth: '180px',
         paddingTop: '2%',
         height: '30vh',
-        marginRight: '0.5vw',
         background: 'rgb(243, 245, 252)',
         textAlign: 'center',
         borderRadius: '3px'
+    },
+    logoContainer : {
+        width: '60%'
     }
 })
 
@@ -40,7 +40,7 @@ const Sidebar = props => {
    return (
         <div className={classes.leftColumn}>
             <div className={classes.contentContainer}>
-                <a href="/"><img className={classes.logo} src={logo}/></a>
+                <a className={classes.logoContainer} href="/"><img className={classes.logo} src={logo}/></a>
                 <div className={classes.floatingSidebar}>
                     {props.children}
                 </div>
