@@ -10,7 +10,8 @@ const contactStyles = createUseStyles({
         border: 'solid black 1px',
         padding: '10px',
         margin: '1%',
-        width: '13vw'
+        width: '13vw',
+        minWidth: '200px',
 
     },
     personImage :{
@@ -23,7 +24,7 @@ const contactStyles = createUseStyles({
         border: 'solid black 1px',
         padding: '10px',
 
-    }
+    },
 })
 
 const Contact = props => {

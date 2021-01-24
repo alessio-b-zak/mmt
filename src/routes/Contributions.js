@@ -22,7 +22,7 @@ const chill = {
     title: 'The Chillout Zone',
     imgPath: 'download.jpeg',
     description: 'A theatre play about chilling the fuck out',
-    tags: ['chilling', 'billing'],
+    tags: ['chilling'],
     url: 'contributions/chill'
 }
 

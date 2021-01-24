@@ -3,6 +3,8 @@ import { createUseStyles } from 'react-jss';
 import BurgerButton from './BurgerButton';
 import logo from '../assets/logo.png'
 import TreeViewMobile from './TreeViewMobile';
+import disableScroll from 'disable-scroll';
+import { Link } from 'react-router-dom';
 
 const burgerMenuStyles = createUseStyles({
     hiddenSidebar : {
@@ -15,12 +17,17 @@ const burgerMenuStyles = createUseStyles({
     hiddenContent : {
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         order: '2',
-        width: '40%',
+        width: '50%',
         padding: '2%',
         '& h1' : {
             fontSize: '6.7vw',
 
+        },
+        textDecoration: 'none',
+        '& a' : {
+            textDecoration: 'none'
         }
     },
     burgerContainer : {
@@ -29,10 +36,11 @@ const burgerMenuStyles = createUseStyles({
         alignItems: 'center',
         width: '25%',
         order: '1',
+        zIndex: '8',
     },
     logoContainer : {
         order: 3,
-        width: '35%',
+        width: '25%',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -56,10 +64,14 @@ const burgerMenuStyles = createUseStyles({
     logoStyle : {
         maxWidth: '100%',
         maxHeight: '100%',
-        padding: '5%'
+        padding: '20%'
     },   
     navbarPlaceholder: {
         height: '10%',
+    },
+    nameStyle : {
+        textDecoration: 'none',
+        color: 'black',
     }
 })
 
@@ -70,6 +82,7 @@ const Menu = ({open, setOpen}) => {
         <div className={classes.menu}>
           <div className={classes.navbarPlaceholder}>
           </div>
+            <h1 className="font-effect-3d"> files</h1>
             <TreeViewMobile open={open} setOpen={setOpen}/>
         </div>
     )
@@ -80,14 +93,16 @@ const BurgerMenu = () => {
     const classes = burgerMenuStyles();
     return (
         <div className={classes.hiddenSidebar}>
-          <div className={classes.burgerContainer}>
+          <div onClick={() => {if (open === true){ setOpen(!open); disableScroll.off();}else{disableScroll.on(); setOpen(!open)}}} className={classes.burgerContainer}>
             <BurgerButton open={open} setOpen={setOpen}/>
           </div>
-          <div className={classes.hiddenContent}>
-            <h1 className="font-effect-3d">m.m.t</h1>
+          <div  className={classes.hiddenContent}>
+            <Link to={"/"}>
+            <h1 className={`${classes.nameStyle} font-effect-3d`}>m.m.t</h1>
+            </Link>
           </div>
           <div className={classes.logoContainer}> 
-            <img className={classes.logoStyle} src={logo}/>
+            <a href="/"><img className={classes.logoStyle} src={logo}/></a>
           </div>
           <div/>
           <Menu open={open} setOpen={setOpen} />

@@ -7,7 +7,7 @@ const titleViewerStyles = createUseStyles({
         color: 'black',
         marginTop: '8%',
         fontSize: '6vw',
-        marginBottom: '10%',
+        marginBottom: '5%',
     },
 
   '@media only screen and (max-width: 1730px)' :{
@@ -40,9 +40,24 @@ const TitleViewer = () => {
                 theatre
             </h1> 
             <Textbox>
-                Harry write something here thanks. 
-                this is words that i wrote thanks 
-                brrrr
+                Welcome to multi.modal.theatre a new online theatre company
+                and performance space. The work we produce is inspired by our
+                complex and ever-changing relationship to the Internet and
+                technology, and how we integrate both into our everyday
+                lives. This, along with the coronavirus pandemic has
+                fundamentally changed human interaction and has provides us
+                with an opportunity to rethink established conceptions of a
+                performance space.
+                
+                This company is a loose collective and we collaborate with
+                artists, poets, videographers and actors, all virtually. We
+                grew up on the Internet and it has shaped who we are.
+                
+                We are currently working to digitally stage a performance of
+                our brand-new verbatim project ‘a play about QAnon’ and have
+                opened up a digital platform to young creatives to display
+                their work. To find out more......
+
             </Textbox>
         </div>
     )

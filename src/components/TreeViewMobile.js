@@ -18,8 +18,10 @@ const linkStyles = createUseStyles({
         fontSize: '5vw'
     },
     liI :{
-        border: 'solid 2px grey',
+        border: 'solid 1px black',
         margin:  '2vh',
+        boxShadow: '-5px 5px',
+        backgroundColor: 'lightyellow'
     }
 })
 

@@ -43,7 +43,7 @@ const burgerButtonStyles = createUseStyles({
 const BurgerButton = ({open, setOpen}) => {
     const classes = burgerButtonStyles(open);
     return (
-        <div onClick={() => {if (open === true){ setOpen(!open); disableScroll.off();}else{disableScroll.on(); setOpen(!open)}}} className={classes.burgerButton}>
+        <div  className={classes.burgerButton}>
            <div className={classes.firstLine}/> 
            <div className={classes.secondLine}/> 
            <div className={classes.thirdLine}/> 

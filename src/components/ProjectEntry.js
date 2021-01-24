@@ -1,7 +1,6 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss'
 import { Link } from 'react-router-dom';
-import download from "../assets/download.jpeg"
 
 
 const images = require.context('../assets', true);
@@ -12,13 +11,14 @@ const projectEntryStyles = createUseStyles({
         display: 'flex',
         flexDirection: 'column',
         border: 'solid black 1px',
-        padding: '10px',
-        marginTop: '2%'
+        padding: '5px',
+        boxShadow: '-5px 5px',
+        marginTop: '1%'
     },
     projectContainer : {
         display: 'flex',
         flexDirection: 'row',
-        height: '100px',
+        height: '90px',
         marginTop: '2%'
     },
     pictureContainer:{
@@ -46,6 +46,8 @@ const projectEntryStyles = createUseStyles({
     forceNoStyle : {
         textDecoration: 'none', 
         color: 'black',
+        marginTop: '1px',
+        marginBottom: '1px',
     },
     tagContainer : {
         border: 'solid black 1px',
@@ -131,6 +133,7 @@ const projectEntrySmallStyles = createUseStyles({
         flexDirection: 'column',
         marginBottom: '4%',
         backgroundColor: 'lightyellow',
+        boxShadow: '-5px 5px',
     },
     boxContainer : {
         display: 'flex',
