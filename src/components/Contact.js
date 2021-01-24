@@ -9,15 +9,13 @@ const contactStyles = createUseStyles({
         flexDirection: 'column',
         border: 'solid black 1px',
         padding: '10px',
-        margin: '2%',
-        width: '200px'
+        margin: '1%',
+        width: '13vw'
 
     },
     personImage :{
         maxWidth : '100%',
         maxHeight : '100%',
-        border: 'solid black 1px',
-        padding: '5px',
 
     },
     box: {
@@ -33,8 +31,11 @@ const Contact = props => {
     return (
         <div className={classes.contactContainer}>
             <img className={classes.personImage} src={require("../assets/" + props.imgPath).default}/>
-            <div className={classes.box}>{props.name}</div>
-            <div className={classes.box}>{props.description}</div>
+            <div className={classes.box}>
+                {props.name}
+                <br/>
+                {props.description}
+                </div>
         </div>
     )
 }
