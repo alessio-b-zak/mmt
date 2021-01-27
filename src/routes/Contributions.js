@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectEntry from '../components/ProjectEntry'
 import {createUseStyles} from 'react-jss';
-import Chillout from './Contribs/Chillout'
+import LilyAnimation from './Contribs/Lily'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,11 +20,11 @@ const contributionsStyles = createUseStyles({
 })
 
 const chill = {
-    title: 'The Chillout Zone',
-    imgPath: 'download.jpeg',
-    description: 'A theatre play about chilling the fuck out',
-    tags: ['chilling'],
-    url: 'contributions/chill'
+    title: 'Perpetuity by Lily Clay',
+    imgPath: 'perpetuity.png',
+    description: 'Lily add some stuff here',
+    tags: ['animation'],
+    url: 'contributions/perpetuity'
 }
 
 
@@ -38,8 +39,8 @@ const Contributions = () => {
             <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
             <ProjectEntry {...chill}/>
         </Route>
-        <Route path="/contributions/chill">
-            <Chillout/>
+        <Route path="/contributions/perpetuity">
+            <LilyAnimation/>
         </Route>
         </div>
     )
