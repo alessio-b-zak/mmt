@@ -13,7 +13,8 @@ const projectEntryStyles = createUseStyles({
         border: 'solid black 1px',
         padding: '5px',
         boxShadow: '-5px 5px',
-        marginTop: '1%'
+        marginTop: '1%',
+        marginBottom: '5%'
     },
     projectContainer : {
         display: 'flex',
@@ -25,6 +26,7 @@ const projectEntryStyles = createUseStyles({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'stretch',
         height: '80px',
         order: '1',
         left: '10px',
@@ -131,7 +133,7 @@ const projectEntrySmallStyles = createUseStyles({
         border: 'solid black 1px',
         padding: '10px',
         flexDirection: 'column',
-        marginBottom: '4%',
+        marginBottom: '10%',
         backgroundColor: 'lightyellow',
         boxShadow: '-5px 5px',
     },
@@ -142,13 +144,14 @@ const projectEntrySmallStyles = createUseStyles({
         flexDirection: 'column',
         marginTop: '5px',
         textDecoration: 'none', 
-        color: 'black',
-
+        color: 'black'
     },
     picContainer: {
         display: 'flex',
         padding: '10px',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
     },
     linksStyles : {
         '& a' : {
@@ -162,6 +165,11 @@ const projectEntrySmallStyles = createUseStyles({
         textDecoration: 'none', 
         color: 'black',
     },
+    mobileTeaserImage : {
+       maxWidth: '100%',
+       maxHeight: '100%',
+    },
+
 })
 
 const ProjectEntrySmall = props => {
@@ -171,7 +179,7 @@ const ProjectEntrySmall = props => {
         <Link  to={props.url}>
         <div className={classes.projectSmallContainer}>
             <div className={classes.picContainer}>
-                <img className={classes.teaserImage} src={require('../assets/' + props.imgPath).default}/>
+                <img className={classes.mobileTeaserImage} src={require('../assets/' + props.imgPath).default}/>
             </div>
             <div className={classes.forceNoStyle}>
                 {props.title}

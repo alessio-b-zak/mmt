@@ -24,7 +24,15 @@ const chill = {
     imgPath: 'perpetuity.png',
     description: 'Lily add some stuff here',
     tags: ['animation'],
-    url: 'contributions/perpetuity'
+    url: '/perpetuity'
+}
+
+const untitled = {
+    title: '4 untitled works by Mia Dove',
+    imgPath: 'untitled2.jpg',
+    description: 'Someone add something here',
+    tags: ['print collage'],
+    url: '/untitled'
 }
 
 
@@ -33,15 +41,13 @@ const chill = {
 
 const Contributions = () => {
     const classes = contributionsStyles();
+    let { path, url } = useRouteMatch();
+
     return (
         <div>
-        <Route exact path="/contributions">
-            <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
-            <ProjectEntry {...chill}/>
-        </Route>
-        <Route path="/contributions/perpetuity">
-            <LilyAnimation/>
-        </Route>
+        <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
+        <ProjectEntry {...chill}/>
+        <ProjectEntry {...untitled}/>
         </div>
     )
 }

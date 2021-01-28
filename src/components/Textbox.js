@@ -5,6 +5,7 @@ const textboxStyles = createUseStyles({
     textbox: {
         border: 'solid black 1px',
         padding: '10px',
+        marginTop: '2%',
     }
 })
 

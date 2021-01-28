@@ -4,6 +4,9 @@ import About from './routes/About';
 import Projects from './routes/Projects';
 import Contributions from './routes/Contributions';
 import TreeView from './components/TreeView';
+
+import LilyAnimation from './routes/Contribs/Lily'
+import Untitled from './routes/Contribs/Untitled'
 import MainViewport from './components/MainViewport';
 import {createUseStyles} from 'react-jss';
 
@@ -83,6 +86,12 @@ function App() {
               </Route>
               <Route path="/aboutus">
                 <About/>
+              </Route>
+              <Route path="/perpetuity">
+                <LilyAnimation/>
+              </Route>
+              <Route path="/untitled">
+                <Untitled/>
               </Route>
             </Switch>
         </MainViewport>

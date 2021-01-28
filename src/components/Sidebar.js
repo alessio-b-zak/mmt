@@ -24,6 +24,7 @@ const sidebarStyles = createUseStyles({
     floatingSidebar: {
         width: '60%',
         minWidth: '180px',
+        minHeight: '200px',
         paddingTop: '2%',
         height: '30vh',
         background: 'rgb(243, 245, 252)',

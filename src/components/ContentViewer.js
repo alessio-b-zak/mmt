@@ -15,8 +15,8 @@ const contentViewerStyles = createUseStyles({
             right: '10px',
         },
         padding : {
-            left: '7%',
-            right: '7%',
+            left: '5%',
+            right: '5%',
             top: '3%',
             bottom: '3%',
         },
