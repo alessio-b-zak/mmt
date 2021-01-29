@@ -41,8 +41,8 @@ const contactStyles = createUseStyles({
 
 const TwitterLink = props => {
     return(
-        <>twitter: 
-        <a href={`https://twitter.com/${props.twitterName}`}>@{props.twitterName} </a>
+        <> 
+        <a href={`https://twitter.com/${props.twitterName}`}>twitter </a>
         <br/>
         </>
     )
@@ -50,8 +50,8 @@ const TwitterLink = props => {
 
 const InstaLink = props => {
     return(
-        <>insta: 
-        <a href={`https://instagram.com/${props.instaName}`}>@{props.instaName} </a>
+        <>
+        <a href={`https://instagram.com/${props.instaName}`}>insta </a>
         <br/>
         </>
     )
@@ -83,7 +83,6 @@ const Contact = props => {
                 <u>{props.name}</u> 
                 <br/>
                 {instaButton}
-                <br/>
                 {twitterButton}
                 <br/>
                 {props.description}

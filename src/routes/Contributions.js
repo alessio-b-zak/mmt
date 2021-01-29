@@ -30,11 +30,18 @@ const chill = {
 const untitled = {
     title: '4 untitled works by Mia Dove',
     imgPath: 'untitled2.jpg',
-    description: 'fill in here',
+    description: '',
     tags: ['print collage'],
     url: '/untitled'
 }
 
+const esthPoems = {
+    title: '3 poems by Esther Lowlands',
+    imgPath: 'brige.jpg',
+    description: '',
+    tags: ['poetry'],
+    url: '/untitledpoems'
+}
 
 // switch statement here
 
@@ -48,6 +55,7 @@ const Contributions = () => {
         <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
         <ProjectEntry {...chill}/>
         <ProjectEntry {...untitled}/>
+        <ProjectEntry {...esthPoems}/>
         </div>
     )
 }

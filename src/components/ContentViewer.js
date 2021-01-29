@@ -7,7 +7,8 @@ const contentViewerStyles = createUseStyles({
         width: "70%",
         minWidth: '900px',
         flexBasis: '75%',
-        flexSrink: '1',
+        flex: '1 0 auto',
+        flexShrink: '1',
         margin : {
             top: '5vh',
             left: '0.5vh',

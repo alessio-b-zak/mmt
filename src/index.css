@@ -12,10 +12,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: absolute;
 }
 
 html {
-  min-height: 100vh;
+  height: auto;
+  min-height: 100%;
+  margin: 0;
 }
 
 @media only screen and (max-width: 600px) {

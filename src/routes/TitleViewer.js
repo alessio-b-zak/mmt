@@ -53,7 +53,7 @@ const TitleViewer = () => {
                 We are currently working to digitally stage a performance of
                 our brand-new verbatim project ‘a play about QAnon’ and have
                 opened up a digital platform to young creatives to display
-                their work.
+                their work. 1
             </Textbox>
         </div>
     )
