@@ -1,19 +1,21 @@
 {
   "files": {
     "main.css": "./static/css/main.64ad9005.chunk.css",
-    "main.js": "./static/js/main.32361995.chunk.js",
-    "main.js.map": "./static/js/main.32361995.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.b04ea305.js",
-    "runtime-main.js.map": "./static/js/runtime-main.b04ea305.js.map",
-    "static/js/2.68dce148.chunk.js": "./static/js/2.68dce148.chunk.js",
-    "static/js/2.68dce148.chunk.js.map": "./static/js/2.68dce148.chunk.js.map",
-    "static/js/3.49e498ac.chunk.js": "./static/js/3.49e498ac.chunk.js",
-    "static/js/3.49e498ac.chunk.js.map": "./static/js/3.49e498ac.chunk.js.map",
+    "main.js": "./static/js/main.30d373de.chunk.js",
+    "main.js.map": "./static/js/main.30d373de.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.b01d0619.js",
+    "runtime-main.js.map": "./static/js/runtime-main.b01d0619.js.map",
+    "static/js/2.7e59e9f2.chunk.js": "./static/js/2.7e59e9f2.chunk.js",
+    "static/js/2.7e59e9f2.chunk.js.map": "./static/js/2.7e59e9f2.chunk.js.map",
+    "static/js/3.d6e67706.chunk.js": "./static/js/3.d6e67706.chunk.js",
+    "static/js/3.d6e67706.chunk.js.map": "./static/js/3.d6e67706.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.64ad9005.chunk.css.map": "./static/css/main.64ad9005.chunk.css.map",
-    "static/js/2.68dce148.chunk.js.LICENSE.txt": "./static/js/2.68dce148.chunk.js.LICENSE.txt",
+    "static/js/2.7e59e9f2.chunk.js.LICENSE.txt": "./static/js/2.7e59e9f2.chunk.js.LICENSE.txt",
     "static/media/bg.png": "./static/media/bg.7b8527e5.png",
     "static/media/harry.jpg": "./static/media/harry.9d0c1d56.jpg",
+    "static/media/insta_icon.png": "./static/media/insta_icon.e2016f01.png",
+    "static/media/instaicon.webp": "./static/media/instaicon.072fbdc9.webp",
     "static/media/kurf.jpg": "./static/media/kurf.b1fb2702.jpg",
     "static/media/lily.jpg": "./static/media/lily.170faf32.jpg",
     "static/media/logo.png": "./static/media/logo.47203845.png",
@@ -25,9 +27,9 @@
     "static/media/will.jpg": "./static/media/will.ee3684b8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.b04ea305.js",
-    "static/js/2.68dce148.chunk.js",
+    "static/js/runtime-main.b01d0619.js",
+    "static/js/2.7e59e9f2.chunk.js",
     "static/css/main.64ad9005.chunk.css",
-    "static/js/main.32361995.chunk.js"
+    "static/js/main.30d373de.chunk.js"
   ]
 }
