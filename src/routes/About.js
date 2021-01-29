@@ -24,14 +24,28 @@ const aboutStyles = createUseStyles({
 
 const harry = {
     name: 'harry',
-    description: 'omg',
-    imgPath: 'harry.jpg'
+    description: `I’m Harry, I study theatre and performance at the
+    University of Bristol and I’m a co-founder of multi.module.theatre. I’m
+    currently developing my practice and I am very interested in how we can
+    explore the internet through theatre.
+    
+    I also have experience working with children and disabled people in an
+    applied theatre setting and believe passionately in grassroots, community
+    orientated theatre, both on and offline! `,
+    imgPath: 'harry.jpg',
+    insta: 'harry.writesabit.walker',
+    twitter: 'HarryWritesABit'
 }
 
 const lily = {
     name: 'lily',
-    description: 'ftw',
-    imgPath: 'lily.jpg'
+    description: `My name is Lily and I’m the director of design at
+    multi.modal.theatre. I graduated from UCA Farnham with a degree in
+    animation and now collaborate with mmt as a resident artist. I work
+    within a range of mediums, such as embroidery, illustration and digital
+    design.`,
+    imgPath: 'lily.jpg',
+    insta: 'lily.draws.a.bit'
 }
 
 const kurf = {
@@ -45,7 +59,7 @@ const kurf = {
 
 const will = {
     name: 'will',
-    description: `I'm well, I study theatre performance at the University of
+    description: `I'm Will, I study theatre performance at the University of
     Bristol, and I am the producer and co-creative director of
     multi.modal.theatre. I'm really excited to be working on theatre at a
     time when it's got incredibly hard to do so. The piece we are developing

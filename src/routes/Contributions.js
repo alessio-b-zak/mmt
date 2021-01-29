@@ -22,7 +22,7 @@ const contributionsStyles = createUseStyles({
 const chill = {
     title: 'Perpetuity by Lily Clay',
     imgPath: 'perpetuity.png',
-    description: 'Lily add some stuff here',
+    description: 'A film about technology, nature, and time',
     tags: ['animation'],
     url: '/perpetuity'
 }
@@ -30,7 +30,7 @@ const chill = {
 const untitled = {
     title: '4 untitled works by Mia Dove',
     imgPath: 'untitled2.jpg',
-    description: 'Someone add something here',
+    description: 'fill in here',
     tags: ['print collage'],
     url: '/untitled'
 }

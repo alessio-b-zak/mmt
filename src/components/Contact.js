@@ -39,16 +39,52 @@ const contactStyles = createUseStyles({
   }
 })
 
+const TwitterLink = props => {
+    return(
+        <>twitter: 
+        <a href={`https://twitter.com/${props.twitterName}`}>@{props.twitterName} </a>
+        <br/>
+        </>
+    )
+}
+
+const InstaLink = props => {
+    return(
+        <>insta: 
+        <a href={`https://instagram.com/${props.instaName}`}>@{props.instaName} </a>
+        <br/>
+        </>
+    )
+}
+
+
 const Contact = props => {
     const classes = contactStyles()
+    let instaButton;
+    let twitterButton;
+    if('insta' in props) {
+        instaButton = <InstaLink instaName={props.insta}/>
+    }
+    else {
+        instaButton=(null)
+    }
+    if('twitter' in props) {
+        twitterButton = <TwitterLink twitterName={props.twitter}/>
+    }
+    else {
+        twitterButton=(null)
+    }
     return (
         <div className={classes.contactContainer}>
             <div className={classes.imageContainer}>
             <img className={classes.personImage} src={require("../assets/" + props.imgPath).default}/>
             </div>
             <div className={classes.box}>
-                <u>{props.name}</u>
+                <u>{props.name}</u> 
                 <br/>
+                {instaButton}
+                <br/>
+                {twitterButton}
                 <br/>
                 {props.description}
                 </div>

@@ -40,7 +40,7 @@ const LilyAnimation = () => {
             ‘Perpetuity’ is a film I made whilst studying at UCA Farnham.
             It’s about the frantic development of technology, it’s
             relationship with nature, and the passage of time. To keep up
-            with me on social media, follow me on Instagram @lily.draws.a.bit
+            with me on social media, follow me on Instagram <a href="https://www.instagram.com/lily.draws.a.bit/">@lily.draws.a.bit</a>
         </div>
     )
 
