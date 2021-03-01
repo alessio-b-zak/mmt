@@ -1,27 +1,29 @@
 {
   "files": {
     "main.css": "./static/css/main.dacbe6e6.chunk.css",
-    "main.js": "./static/js/main.4f9714a2.chunk.js",
-    "main.js.map": "./static/js/main.4f9714a2.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.947a34ff.js",
-    "runtime-main.js.map": "./static/js/runtime-main.947a34ff.js.map",
-    "static/js/2.3b940b2e.chunk.js": "./static/js/2.3b940b2e.chunk.js",
-    "static/js/2.3b940b2e.chunk.js.map": "./static/js/2.3b940b2e.chunk.js.map",
-    "static/js/3.56f4242d.chunk.js": "./static/js/3.56f4242d.chunk.js",
-    "static/js/3.56f4242d.chunk.js.map": "./static/js/3.56f4242d.chunk.js.map",
+    "main.js": "./static/js/main.9f84e804.chunk.js",
+    "main.js.map": "./static/js/main.9f84e804.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.72ab2d7f.js",
+    "runtime-main.js.map": "./static/js/runtime-main.72ab2d7f.js.map",
+    "static/js/2.a5b2f090.chunk.js": "./static/js/2.a5b2f090.chunk.js",
+    "static/js/2.a5b2f090.chunk.js.map": "./static/js/2.a5b2f090.chunk.js.map",
+    "static/js/3.927fab78.chunk.js": "./static/js/3.927fab78.chunk.js",
+    "static/js/3.927fab78.chunk.js.map": "./static/js/3.927fab78.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.dacbe6e6.chunk.css.map": "./static/css/main.dacbe6e6.chunk.css.map",
-    "static/js/2.3b940b2e.chunk.js.LICENSE.txt": "./static/js/2.3b940b2e.chunk.js.LICENSE.txt",
+    "static/js/2.a5b2f090.chunk.js.LICENSE.txt": "./static/js/2.a5b2f090.chunk.js.LICENSE.txt",
     "static/media/bg.png": "./static/media/bg.7b8527e5.png",
     "static/media/brige.jpg": "./static/media/brige.f287aac2.jpg",
     "static/media/effing.png": "./static/media/effing.997ace98.png",
     "static/media/harry.jpg": "./static/media/harry.9d0c1d56.jpg",
     "static/media/insta_icon.png": "./static/media/insta_icon.e2016f01.png",
     "static/media/instaicon.webp": "./static/media/instaicon.072fbdc9.webp",
+    "static/media/intro_qanon.jpg": "./static/media/intro_qanon.aa299b85.jpg",
     "static/media/kurf.jpg": "./static/media/kurf.b1fb2702.jpg",
     "static/media/lily.jpg": "./static/media/lily.170faf32.jpg",
     "static/media/logo.png": "./static/media/logo.47203845.png",
     "static/media/perpetuity.png": "./static/media/perpetuity.e5afcd59.png",
+    "static/media/qanon.png": "./static/media/qanon.57362d74.png",
     "static/media/untitled1.jpeg": "./static/media/untitled1.eb0f47ef.jpeg",
     "static/media/untitled2.jpg": "./static/media/untitled2.ca915ebb.jpg",
     "static/media/untitled3.jpg": "./static/media/untitled3.b73612f1.jpg",
@@ -29,9 +31,9 @@
     "static/media/will.jpg": "./static/media/will.ee3684b8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.947a34ff.js",
-    "static/js/2.3b940b2e.chunk.js",
+    "static/js/runtime-main.72ab2d7f.js",
+    "static/js/2.a5b2f090.chunk.js",
     "static/css/main.dacbe6e6.chunk.css",
-    "static/js/main.4f9714a2.chunk.js"
+    "static/js/main.9f84e804.chunk.js"
   ]
 }
