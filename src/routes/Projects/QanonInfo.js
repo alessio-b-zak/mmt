@@ -14,7 +14,8 @@ import amber from '../../assets/amber.jpg'
 import amberinfo from '../../assets/amber_info.jpg'
 import natty from '../../assets/natty.jpg'
 import nattyinfo from '../../assets/natty_info.jpg'
-
+import cocoinfo from '../../assets/coco_info.jpg'
+import coco from '../../assets/coco.jpg'
 
 
 const aboutStyles = createUseStyles({
@@ -86,6 +87,13 @@ const QanonInfo = () => {
             <br/>
             <img className={classes.picStyle} src={natty}/>
             <img className={classes.picStyle} src={nattyinfo}/>
+            <h3>Coco</h3>
+            <br/>
+            <img className={classes.picStyle} src={coco}/>
+            <img className={classes.picStyle} src={cocoinfo}/>
+            <h3>Sam</h3>
+            <img className={classes.picStyle} src={sam}/>
+            <img className={classes.picStyle} src={saminfo}/>
         </div>
     </div>    
  )
