@@ -23,8 +23,7 @@ const Untitled = () => {
          practise I explore female and personal narratives and identities.
          
          You can follow my work through my Instagram account where I document
-         my ideas and processes: <a href={`https://www.instagram.com/mialucydove/`}>@mialucydove</a>
-
+         my ideas and processes: <a href={`https://www.instagram.com/mialucydove/`}> @mialucydove</a>
          <br/>
          <br/>
          <br/>

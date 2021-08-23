@@ -1,6 +1,15 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss';
 import Textbox from "../components/Textbox"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams 
+} from "react-router-dom";
+
 
 const titleViewerStyles = createUseStyles({
     test: {
@@ -50,10 +59,9 @@ const TitleViewer = () => {
                 artists, poets, videographers and actors, all virtually. We
                 grew up on the Internet and it has shaped who we are.
                 
-                We are currently working to digitally stage a performance of
-                our brand-new verbatim project ‘a play about QAnon’ and have
-                opened up a digital platform to young creatives to display
-                their work. 1
+                Check out our new play about Qanon <Link
+                to="/qanon">here</Link> and submitted contributions <Link
+                to="/contributions">here</Link>
             </Textbox>
         </div>
     )

@@ -9,7 +9,10 @@ import LilyAnimation from './routes/Contribs/Lily'
 import Untitled from './routes/Contribs/Untitled'
 import UntitledPoems from './routes/Contribs/UntitledPoems'
 import MainViewport from './components/MainViewport';
+import EffingRobots from './routes/Contribs/EffingRobots';
 import {createUseStyles} from 'react-jss';
+import Qanon from './routes/Projects/Qanon';
+import QanonInfo from './routes/Projects/QanonInfo'
 
 import bg from './assets/bg.png';
 
@@ -30,6 +33,7 @@ const appStyles = createUseStyles({
     display: 'flex',
     fontFamily: "'Anonymous Pro' , monospace",
     backgroundImage: `url(${bg})`,
+    width: '100vw',
     height: '100%',
     backgroundAttachment: 'fixed',
     '& h1': {
@@ -97,7 +101,16 @@ function App() {
               <Route path="/untitledpoems">
                 <UntitledPoems/>
               </Route>
-            </Switch>
+              <Route path="/effingrobots">
+                <EffingRobots/>
+              </Route>
+             <Route path="/qanoninfo">
+                <QanonInfo/>
+              </Route>
+              <Route path="/qanon">
+                <Qanon/>
+              </Route>
+             </Switch>
         </MainViewport>
       </div>
     </Router>

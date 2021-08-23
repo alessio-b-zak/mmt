@@ -43,6 +43,14 @@ const esthPoems = {
     url: '/untitledpoems'
 }
 
+const effingRobots = {
+    title: 'Effing Robots by L. Nicol Cabe',
+    imgPath: 'effing.png',
+    description: 'A play about artificial intelligence and love',
+    tags: ['theatre'],
+    url: '/effingrobots'
+}
+
 // switch statement here
 
 
@@ -53,9 +61,10 @@ const Contributions = () => {
     return (
         <div>
         <h1 className={`${classes.contributionsStyle} font-effect-3d`}>Contributions</h1>
-        <ProjectEntry {...chill}/>
-        <ProjectEntry {...untitled}/>
+        <ProjectEntry {...effingRobots}/>
         <ProjectEntry {...esthPoems}/>
+        <ProjectEntry {...untitled}/>
+        <ProjectEntry {...chill}/>
         </div>
     )
 }

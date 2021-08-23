@@ -4,7 +4,7 @@ import { createUseStyles } from 'react-jss'
 
 const untitledPoemsStyle = createUseStyles({
     preft : {
-        wordBreak: 'break-all',
+        wordBreak: 'break-word',
         whiteSpace: 'pre-line'
     }
 })
