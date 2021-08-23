@@ -16,6 +16,8 @@ import natty from '../../assets/natty.jpg'
 import nattyinfo from '../../assets/natty_info.jpg'
 import cocoinfo from '../../assets/coco_info.jpg'
 import coco from '../../assets/coco.jpg'
+import saminfo from '../../assets/sam_info.jpg'
+import sam from '../../assets/sam.jpg'
 
 
 const aboutStyles = createUseStyles({

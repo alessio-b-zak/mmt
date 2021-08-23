@@ -40,16 +40,28 @@ const Qanon = () => {
         <div>
             <h1>"Those People": A play about Qanon</h1>
             <br></br>
-            Watch our new show about the Qanon movement and young people in the UK below!
+            In this work we have adapted verbatim material from interviews
+            and online content relating to Qanon compiled before the 2020 election.
+            <br></br>
+            <br></br>
+            <h2>In-Person Production</h2>
+            The second of the two productions was an in-person play which was filmed.
+            It featured a reduced cast and is currently featuring in the Fringe online and can be found
+            Check the info page <Link to="/qanoninfo">here</Link> for more
+            information about the cast and trigger warnings.
+            <a href="https://tickets.edfringe.com/whats-on/those-people-a-play-about-qanon">here</a>
+            <br></br>
+            <br></br>
+            <h2>Online Production</h2>
+            Below is the first production which was done with the full cast
+            filmed during lockdown.
+            <br></br>
             <br></br>
             <br></br>
             <Test youtubeId="12jCL71qeiU"/>
             <br></br>
-            Check the info page <Link to="/qanoninfo">here</Link> for more
-            information about the cast and trigger warnings.
             <br></br> 
-            <br></br> 
-            We have produced a
+            We produced a
             podcast on our experience of making the project which you can
             listen to on <a
             href="https://soundcloud.com/user-639811671/what-we-learned-writing-a-play-about-qanon?ref=clipboard&p=i&c=1">
