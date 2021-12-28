@@ -1,6 +1,8 @@
 import React from 'react'
 import {createUseStyles} from 'react-jss';
 import Textbox from "../components/Textbox"
+import titlepic from '../assets/title_page.jpg'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,7 +35,11 @@ const titleViewerStyles = createUseStyles({
   '@media only screen and (max-width: 600px)' :{
       test : {
           fontSize: '12vw'
-      }
+      },
+    picStyle :{
+        maxWidth: '100%',
+    },
+
   }
 })
 
@@ -50,7 +56,7 @@ const TitleViewer = () => {
             </h1> 
             <Textbox>
                 Welcome to multi.modal.theatre a new online theatre company
-                and performance space. The work we produce is inspired by our
+                and digital performance space. The work we produce is inspired by our
                 complex and ever-changing relationship to the Internet and
                 technology, and how we integrate both into our everyday
                 lives.                 
@@ -59,10 +65,11 @@ const TitleViewer = () => {
                 artists, poets, videographers and actors, all virtually. We
                 grew up on the Internet and it has shaped who we are.
                 
-                Check out our new play about Qanon <Link
-                to="/qanon">here</Link> and submitted contributions <Link
-                to="/contributions">here</Link>
+                Check out our new play,   
+                <Link to="/qanon">"Those People": A Play About Qanon</Link>, which was recently featured as part of the Edinburgh Fringe and other contributions <Link
+                to="/contributions">here</Link>. Follow us on Twitter at <Link to="https://twitter.com/modaltheatre?lang=en-gb">@ModalTheatre</Link>! 
             </Textbox>
+         {/* <img className={classes.picStyle} src={titlepic}/> */}
         </div>
     )
 }

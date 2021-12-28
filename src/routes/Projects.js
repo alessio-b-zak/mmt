@@ -19,7 +19,7 @@ const contributionsStyles = createUseStyles({
 
 const qanon = {
     title: '"Those People": A play about Qanon',
-    imgPath: 'qanon_title.jpg',
+    imgPath: 'qanon_header.jpg',
     description: 'A verbatim play about Qanon and youth in the UK and around the world',
     tags: ['qanon'],
     url: '/qanon'
