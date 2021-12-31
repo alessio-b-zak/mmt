@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "./static/css/main.dacbe6e6.chunk.css",
-    "main.js": "./static/js/main.e9cdb586.chunk.js",
-    "main.js.map": "./static/js/main.e9cdb586.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.a9eec62e.js",
-    "runtime-main.js.map": "./static/js/runtime-main.a9eec62e.js.map",
-    "static/js/2.114405d8.chunk.js": "./static/js/2.114405d8.chunk.js",
-    "static/js/2.114405d8.chunk.js.map": "./static/js/2.114405d8.chunk.js.map",
-    "static/js/3.8c07fa45.chunk.js": "./static/js/3.8c07fa45.chunk.js",
-    "static/js/3.8c07fa45.chunk.js.map": "./static/js/3.8c07fa45.chunk.js.map",
+    "main.js": "./static/js/main.f6dc01a6.chunk.js",
+    "main.js.map": "./static/js/main.f6dc01a6.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.ea5ab255.js",
+    "runtime-main.js.map": "./static/js/runtime-main.ea5ab255.js.map",
+    "static/js/2.b3715982.chunk.js": "./static/js/2.b3715982.chunk.js",
+    "static/js/2.b3715982.chunk.js.map": "./static/js/2.b3715982.chunk.js.map",
+    "static/js/3.407ee691.chunk.js": "./static/js/3.407ee691.chunk.js",
+    "static/js/3.407ee691.chunk.js.map": "./static/js/3.407ee691.chunk.js.map",
     "index.html": "./index.html",
     "static/css/main.dacbe6e6.chunk.css.map": "./static/css/main.dacbe6e6.chunk.css.map",
-    "static/js/2.114405d8.chunk.js.LICENSE.txt": "./static/js/2.114405d8.chunk.js.LICENSE.txt",
+    "static/js/2.b3715982.chunk.js.LICENSE.txt": "./static/js/2.b3715982.chunk.js.LICENSE.txt",
     "static/media/amber.jpg": "./static/media/amber.b2b78acc.jpg",
     "static/media/amber_info.jpg": "./static/media/amber_info.98e3dcc2.jpg",
     "static/media/bg.png": "./static/media/bg.7b8527e5.png",
     "static/media/brige.jpg": "./static/media/brige.f287aac2.jpg",
+    "static/media/chai.jpeg": "./static/media/chai.5b17f2a0.jpeg",
     "static/media/claudia.jpg": "./static/media/claudia.077f5b51.jpg",
     "static/media/claudia_info.jpg": "./static/media/claudia_info.cdcabe61.jpg",
     "static/media/coco.jpg": "./static/media/coco.5cd51c18.jpg",
@@ -52,9 +53,9 @@
     "static/media/will_qanon_info.jpg": "./static/media/will_qanon_info.490a0920.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9eec62e.js",
-    "static/js/2.114405d8.chunk.js",
+    "static/js/runtime-main.ea5ab255.js",
+    "static/js/2.b3715982.chunk.js",
     "static/css/main.dacbe6e6.chunk.css",
-    "static/js/main.e9cdb586.chunk.js"
+    "static/js/main.f6dc01a6.chunk.js"
   ]
 }
